@@ -1,0 +1,260 @@
+* {
+  margin: 0; /*Remove browser default setting*/
+  padding: 0; /*Remove browser default setting*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/************Navigation Header************/
+.navbar {
+  position: sticky; /*  positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).*/
+  top: 0; /*Fix the position of the navbar at a 0px top of the screen when the scroll location reaches a point where narbar will be 0px from the top of the viewport*/
+  display: flex; /*The flex container becomes flexible by setting the display property to flex (inline or block). Setting display flex or inline-flex makes CSS columns have no effect on the navbar*/
+  justify-content: space-between; /*items are evenly distributed in the line; first item (MAIN EVENTS) is on the start line, last item (<ul>) on the end line*/
+  background-color: white;
+  height: 100px;
+  align-items: center; /*items are centered in the cross-axis. align-items as the justify-content version for the cross-axis*/
+}
+.navbar-brand {
+  color: #af9453;
+  text-decoration: none;
+  margin-left: 100px;
+}
+.navbar ul {
+  list-style-type: none; /*Removes the list marker bullets.*/
+  margin-right: 30px;
+}
+.navbar li {
+  display: inline; /*By default, <li> elements are block elements, so we need to remove the link breaks before and after each list item, to display them on one line*/
+  margin-right: 60px;
+}
+.navbar li a {
+  color: black;
+  text-decoration: none; /*Remove underlines from links*/
+}
+.navbar li a:hover {
+  color: #77663a;
+}
+
+/************Top Image and Title************/
+.title {
+  color: white;
+  text-align: center;
+  background-image: url("./images/image3.png");
+  background-repeat: no-repeat;/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1440px;
+  height: 1090px;
+/*
+  background-position: 0px -130px;
+  background-size: 1290px 1290px;
+  height: 1090px;
+  background-size: 1440px;
+*/
+}
+.title-text {
+  padding-top: 250px;
+}
+.title-text h1 {
+  margin-top: 0;
+  font-size: 60px;
+  font-weight: normal;
+  margin-bottom: 23px;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 24px;
+}
+
+/************Middle Image and Services Card************/
+.middle {
+  display: flex; /*make it becomes a flex container*/
+  justify-content: center;
+  margin-top: 85px;
+}
+.services-item {
+  background-color: #af9453;
+  width: 370px;
+  height: 560px;
+  text-align: center;
+  color: white;
+}
+.services-item h1 {
+  font-weight: normal;
+  margin-top: 120px;
+  letter-spacing: 13px;
+}
+.flower {
+  overflow: hidden;
+  width: 370px; /* width of container */
+  height: 65px; /* height of container */
+  margin-top: 35px;
+}
+.flower img {
+  width: 420px;
+  height: 580px;
+  margin: -200px 0 0 -30px;
+}
+.services-item h2 {
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  width: 280px;
+  margin-left: 40px;
+  line-height: 2;
+  margin-top: 0;
+}
+.services-item .button {
+  background-color: #af9453;
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  padding: 15px 88px;
+  margin-top: 43px;
+}
+.img-item img {
+  width: 600px;
+  height: 560px;
+  margin-left: 120px;
+}
+
+/************Middle Saying************/
+.saying {
+  text-align: center;
+}
+.saying .commas h1 {
+  font-size: 76px;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 125px;
+}
+.saying .text {
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+.saying .text h1 {
+  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  font-size: 36px;
+}
+.saying .name h4 {
+  color: #b39a5c;
+  margin-top: 55px;
+}
+
+/************Bottom Scrolling Image and Gallery Card************/
+.space {
+  margin: 140px 0;
+}
+.scrolling {
+  /* https://www.youtube.com/watch?v=xaTOKjvsTBY */
+  background-image: url("./images/image2.png");
+  background-repeat: no-repeat; /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1280px;
+  min-height: 680px; /*set a specific height*/
+}
+.gallery-item {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.gallery-item .gallery-title {
+  background-color: #af9453;
+  width: 325px;
+  height: 535px;
+  padding: 15px;
+  margin: 0px 10px;
+  text-align: center;
+  color: white;
+  margin-left: 920px;
+}
+.gallery-item .gallery-title h1 {
+  font-weight: normal;
+  margin-top: 100px;
+  letter-spacing: 13px;
+  font-size: 32px;
+}
+.gallery-item .flower2 {
+  margin-top: -375px;
+  margin-left: 1070px;
+}
+.gallery-item .flower2 img {
+  width: 68px;
+  height: 65px;
+}
+.gallery-item .text1 {
+  margin-left: 1000px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  letter-spacing: 6px;
+  font-weight: normal;
+  font-size: 22px;
+  margin-top: 13px;
+}
+.gallery-item .text2 {
+  margin-left: 1035px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  letter-spacing: 6px;
+  font-weight: normal;
+  font-size: 22px;
+  margin-top: 20px;
+}
+.gallery-item .button {
+  background-color: #af9453;
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  padding: 15px 55px;
+  margin-top: 65px;
+  margin-left: 1005px;
+}
+
+/************footer************/
+.footer {
+  background-color: #af9453;
+  padding: 55px 0;
+  width: 1285px;
+  margin-bottom: 15px;
+  color: white;
+  line-height: 1.6;
+  font-weight: 550;
+  margin-left:auto;
+  margin-right:auto;
+}
+.footer-content {
+  margin: auto;
+  padding: 10px 30px;
+  height: 110px;
+  position: relative;
+}
+.footer-row {
+  display: flex;
+  margin-left: 120px;
+  position: absolute;
+  top: 25px;
+}
+.footer-column {
+  width: 180px;
+  padding: 0 15px;
+}
+.footer-column ul {
+  list-style: none; /*Removes the list marker bullets.*/
+}
+.vertical-line {
+  border-left: 1px solid white;
+  height: 50px;
+  margin: 5px 15px;
+}
+.footer-action .button {
+  background-color: #af9453;
+  color: white;
+  border: 1px solid white;
+  margin-top: 20px;
+  padding: 15px 20px;
+  margin-left: 80px;
+  font-size: 16px;
+}
